@@ -1,10 +1,15 @@
 //Requireds
 
 const fs = require('fs');
+const colors = require('colors');
 
 
 let listarTabla = ( base, limite = 10) => {
-for (let i = 1; i <= limite; i++) {
+
+    console.log('========================='.green);
+    console.log(`===    Tabla del ${base.green}    ===`);
+    console.log('========================='.green);
+    for (let i = 1; i <= limite; i++) {
         console.log(`${base} * ${i} = ${base*i}`);        
     }
 }
